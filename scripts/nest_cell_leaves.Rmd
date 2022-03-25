@@ -1,0 +1,983 @@
+---
+title: "Megachile wheeleri Nest Cells"
+author: "steppe & Em ?"
+output: 
+  pdf_document:
+      fig_caption: true
+      number_sections: true
+      includes:
+        in_header: float_free.tex
+---
+
+\tableofcontents 
+\listoffigures
+\listoftables
+  
+```{r include=FALSE}
+knitr::opts_chunk$set(comment = NA)
+```
+
+
+# A Beginning: Natural History & Taxonomy 
+
+## Natural History
+
+The study site that these data were collected from is a Siskiyou-Klamath Coastal Sand Dune System in Northern California (Alpert & Kagan 2019). This area is replete with a great number of native bee taxa, and appears to maintain a great number of the native plant taxa - curently with few exotic taxa being present. 
+
+*Megachile wheeleri* is a widespread leafcutter bee in North America, with geographic variation in pollen and nectar feeding preferences, as well as differences in the leaves it uses to build it's nest cells (CITE). In this area *M. wheeleri* has been noted to forage for floral resources largely from *Achillea millefolium*, *Erigeron glaucus*,  and *Solidago spathulata* (Gordon 1992). However, Gordon's fieldwork was conducted in the mid 60's and as of our time of sampling, *A. millefolium* was seldom seen, and I posit is now a seldom used pollen resource (Benkendorf pers. obs). The preference of leaves which *M wheeleri* uses for constructing nest cells aligns loosely with it's floral feeding preferences, with a marked rate of usage of *S. spathulata* leaves, and the additional usage of *Morella* (=*Myrica*) *californica* leaves in certain sites (Gordon 1992, UNDERGRAD THESIS). 
+
+The relative abundance of these plant taxa, as well as features of pollen morphology, make this system a promising system for understanding the costs of mutualisms in an oligolectic bee. 
+
+## *Solidago spathulata* de Candolle
+
+These information come from *Flora of North America* Volume 17. They are written by an expert in *Solidago* systematics, as well as an expert in the Asteraceae of California, John Semple. As well as Rachel E. Cook. 
+
+---
+
+Solidago Linnaeus (sect. Solidago ) subsect. Humiles (Rydberg) Semple, Sida. 20: 1606. 2003.
+Solidago [unranked] Humiles Rydberg, Fl. Rocky Mts., 868. 1917
+
+**Leaves:** basal sometimes present (in rosettes) at flowering, proximal most cauline petiolate, often present at flowering, largest, not 3-nerved. Heads in wand-shaped racemiform, paniculiform, or thyrsiform arrays, not secund. Phyllaries not striate, resinous (minute glands present). Pappus bristles usually in 2, rarely in 3 series, (shorter, outer setiform scales rarely present, inner bristles weakly to strongly clavate).
+
+Solidago spathulata de Candolle in A. P. de Candolle and A. L. P. P. de Candolle, Prodr. 5: 339. 1836.
+Coast goldenrod
+
+**Plants** (10–)20–40(–50) cm; caudices short-branched, thickened, woody. **Stems** 1–15+ , decumbent to erect, proximally glabrous, sparsely strigose in array. **Leaves:** basal petiolate to sessile; blades spatulate, 40–120 × 10–30 mm, subcoriaceous, margins crenate, apices acute to obtuse, glabrous; many-leaved rosettes present at flowering; cauline 9–19, sessile; blades similar to basal proximally, becoming oblanceolate distally, reduced to 10 mm, margins entire, apices acute, often heavily resinous. **Heads** 5–100+, not secund, in paniculiform arrays, or virgate to thyrsiform in robust plants, consisting of axillary and terminal racemiform clusters. **Peduncles** 3–10 mm (longest), sparsely strigose; bracts clustered near base of heads. **Involucres** campanulate, 4–7 mm. **Phyllaries** (15–24 in 3–4 series) unequal, very resinous; outer ovate, obtuse, inner linear-lanceolate, obtuse or acute. **Ray florets** 4–10; laminae 2–4 × 1–2 mm. **Disc florets** 10–18; corollas 4.3–6 mm, lobes 0.7–1.5 mm. **Cypselae** appressed-strigose; **pappi** 3.5–5.5 mm. **2n** = 18.
+
+Flowering Jul–Sep. Dunes and headlands; 0–100 m; Calif., Oreg.
+
+*Solidago spathulata* is scattered along the coast in isolated populations. A narrow interpretation of the species is accepted here following G. S. Ringius (1985).
+
+---
+
+```{r, out.width = "35%", fig.align="center", echo = F, fig.cap="Solidago spathulata, Wheeler No. 109, Samoa Rare Plant Area - Arcata California. Herbarium: BLMAR. Accessed via the California Consortium of Herbaria 09.30.2021"}
+
+knitr::include_graphics(paste0(here::here(),"/images/Solidago_spathulata_wheeler_109.jpg"))
+```
+
+## *Erigeron glaucus* Ker Gawler
+
+These information come from *Flora of North America* Volume 17. They are written by an expert in *Erigeron* systematics, as well as an expert in the Asteraceae of Western North America, Guy Nesom.
+
+---
+
+Erigeron glaucus Ker Gawler, Bot. Reg. 1: plate 10. 1815.
+Seaside fleabane
+
+**Perennials**, 5–30 cm (usually forming dense colonies); rhizomatous, fibrous-rooted, sometimes with branching caudices. **Stems** pro-cumbent to decumbent-ascending, hirsuto-villous or nearly glabrous, usually minutely glandular. **Leaves** basal (usually persistent) and cauline; basal blades broadly obovate to spatulate, 20–130(–150) × 10–30(–50) mm, cauline little reduced distally (fleshy, bases sometimes subclasping), margins entire or with 2–4 pairs of shallow teeth, faces glabrous or hirsute, eglandular. **Heads** 1–15. **Involucres** 7–13 × 15–35 mm. **Phyllaries** in 3–4 series, sparsely to densely villous (cross walls not colored), minutely glandular. **Ray florets** 80–165; corollas white to purple or blue, 8–15 mm, laminae coiling. **Disc corollas** 4.5–5.5 mm. **Cypselae** 1.8–2.4 mm, 2–4(–6)-nerved, faces sparsely strigose; **pappi:** outer of setae, inner of 20–30 bristles. **2n** = 18.
+
+Flowering (Mar–)May–Jul(–Dec). Coastal bluffs, dunes, and beaches; 0–30 m; Calif., Oreg.
+
+---
+
+```{r, out.width="35%", fig.align="center", echo = F, fig.cap="Erigeron glaucus, Wheeler No. 118, King Range - Humboldt Co. California. Herbarium: BLMAR. Accessed via the California Consortium of Herbaria 09.30.2021"}
+knitr::include_graphics(paste0(here::here(),"/images/Erigeron_glaucus_wheeler_118.jpg"))
+```
+
+## *Morella californica* (Chamisso & Schlechtendal) Wilbur
+
+These information come from *Flora of North America* Volume 3. They are written by an expert in *Myricaceae* systematics, Allan Bornstein. While there is some discord in the name applied above (e.g. some variations in authority exists even between the duo of the authors of the basionym), and whether this is referred to as a taxon of *Myrica* or *Morella* (Govaerts et al. 2021), we follow Bornsteins' more current work in the *Jepson Eflora* and refer to this material as being placed in *Morella* (Bornstein 2021). 
+
+---
+
+Myrica californica Chamisso, Linnaea. 6: 535. 1831.
+Pacific bayberry, California wax-myrtle
+
+Gale californica (Chamisso) Greene
+
+**Shrubs or small trees**, evergreen, 2-10 m. **Branchlets** green when young, becoming red-brown, eventually black to gray with age, densely gland-dotted, glands colorless to black, pilose to villous, ultimately glabrous. **Leaf blade** fragrant when crushed, narrowly elliptic to elliptic-oblanceolate, 4-13 × 0.7-3.1 cm, sometimes membranous, more commonly leathery, base cuneate-attenuate, margins variable, from nearly entire (less common) to remotely and coarsely serrate entire length of blade, apex acute; surfaces abaxially pale green, adaxially dark green, shiny, both surfaces gland-dotted; glands colorless to black, considerably more dense abaxially, midrib pilose to glabrate adaxially. **Inflorescences**: staminate 0.6-1.7(-2.5) cm; bisexual 0.6-1.9(-3) cm; flowers bisexual, staminate, or pistillate within any 1 spike. **Staminate flowers**: bract of flower shorter than staminal column, margins opaque and densely ciliate; stamens (2-)6-12(-22). **Pistillate and bisexual flowers**: bracteoles usually persistent in fruit, 4-6, not accrescent or adnate to fruit wall, margins ciliate; stamens 1-5, in bisexual flowers hypogynous, free or often adnate to ovary, especially near styles; ovary ± villous, especially at apex. **Fruits** globose-ellipsoid, 4-6.5 mm; fruit wall glabrate to sparsely villous, obscured by enlarged, glabrous protuberances, with or without light to very heavy coat of white wax.
+
+Flowering spring-early summer, fruiting summer-early fall. Coastal conifer forests, bogs, sand dunes, stream banks, wet meadows, marshes, low, moist hillsides; 0-1000 m; B.C.; Calif., Oreg., Wash.
+
+On any one branchlet, staminate inflorescences are borne proximal to bisexual inflorescences; the most distal inflorescences may be completely pistillate.
+
+It is quite common for two or three pistillate or bisexual flowers to occur per bract and for the ovaries to fuse to form a syncarp. In the fruiting condition this can usually be detected by counting the number of style branches (two per ovary, therefore four for a syncarp derived from two fused ovaries). Many specimens apparently do not produce any wax, in which case the fruits appear purple-black rather than white.
+
+---
+
+```{r, out.width="35%", fig.align="center", echo = F, fig.cap="Morella californica, Benkendorf s.n., Coast Dairies - Santa Cruz Co. California. Herbarium: UCSC. Accessed via the California Consortium of Herbaria 10.02.2021"}
+knitr::include_graphics(paste0(here::here(),"/images/Morella_californica_benkendorf_sn.jpg"))
+```
+Please note that in the above specimen it appears that three leaf cuts have been performed and are evident on the branch to the right in the terminal cluster of leaves. Note that this size of cut is what a *M. wheeleri* would use to 'cap' a nest cell. 
+
+## *Megachile wheeleri* Mitchell
+
+*Megachile wheeleri* is a leafcutter bee and uses plant leafs to serve as a 'nest cell' the young bee then develops a cocoon within this cell to develop overwinter in.
+
+```{r, out.width = "40%", fig.show='hold', echo = F, fig.cap="Left, A freshly dug M. wheeleri nest cell, constructed in the past couple weeks . Right Contents of two freshly dug M. wheeleri nest cells, constructed a month or so ago. Both images from Lanphere Dunes, Sept.2021, by Amelia Litz"}
+knitr::include_graphics(paste0(here::here(),"/images/Megachile_wheeleri_nest_cell_green.jpeg"))
+knitr::include_graphics(paste0(here::here(),"/images/Megachile_wheeleri_nest_cell_dissection.jpeg"))
+```
+The image at right contains, another nest cell, a late larval stage *M. wheeleri*, and a provision composed of Pollen & Nectar, and another late larval stage *M. wheeleri*.
+
+## Ranges Maps of the Plant Taxa
+
+```{r Range Maps , echo = F, message = F, warning = F, fig.cap="Maps of Botanical collections and Ecological Plot data from BIEN showing distributions of these species"}
+library(sf)
+library(ggplot2)
+
+w <- spData::us_states %>% dplyr::filter(NAME %in% c('California', 'Nevada', 'Oregon', 'Washington'))
+pl_taxa <- BIEN::BIEN_occurrence_species( c('Morella californica', 'Solidago spathulata', 'Erigeron glaucus')) 
+pl_taxa <- pl_taxa %>% st_as_sf(coords = c(x = 'longitude', y = 'latitude'))
+st_crs(pl_taxa) <- st_crs(w)
+
+bound <- pl_taxa %>% 
+  st_transform(., 26910) %>% 
+  st_buffer(10000) %>% 
+  st_transform(., 4269) %>% 
+  st_bbox()
+
+my_cols <-  c('forestgreen' , 'darkorchid1', 'goldenrod1')
+
+ggplot() +
+  geom_sf(data = w) +
+  geom_sf(data = pl_taxa, aes(color = scrubbed_species_binomial)) +
+  scale_color_manual(values=my_cols) +
+  coord_sf(crs = 4269,xlim = c(bound[1], bound[3]), ylim = c(bound[2], bound[4])) +
+  labs(color = "Species", fill = 'State') +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle=45, hjust = 1)) +
+  labs(title="Distribution of Plant Species",
+        x ="Longitude", y = "Latitude")
+
+rm(w, pl_taxa, bound)
+```
+
+
+# Data Collection
+
+Pretty much all of this was schemed up after looking at a few nest cells and a few individual plants from the same sub-population. It is not the best design, but given the time I had, more thought would have only been less counts. We have only one goal, identify leaves.
+
+## Morphological Character States
+
+After dissecting several nest cells in the field, and viewing some material of both plant taxa, several easily discernable morphological traits seemed like promising candidates to identify leaves after partial decomposition in sand. 
+
+These traits are:
+
+1) Glandularity of Leaf Teeth Tips
+2) Leaf Apice Exceeded by Leaf Teeth
+3) Distance between Leaf Teeth
+
+These traits were collected from a wide range of leaf sizes to try and capture the variability of the material in the population. As individuals of these plant taxa were never disconnected by more than a one kilometer stretch, I consider both *E. glaucus* and *S. spathulata* as being a single population hereafter. 
+
+## Data Collection & Methods
+
+All of these data were collected at the Lanphere Dunes National Natural Landmark, administered by the United States FIsh & Wildlife Service, in Humboldt County California in mid September 2021. They were collected under permit # 81590-21-10 to Amelia Litz of The Chicago Botanic Garden & Northwestern University.
+
+Lanphere Dunes only allows researchers and approved visitors to traverse on their established trail system with only minor wanders away from it, except for in areas of open ('drifting') sand without significant vegetation. To the best of my knowledge every trail designated for public access was explored in the collection of these data, as were all open sands areas with evident vegetation. Hence, I argue that I comphrehensively sampled the spatial extent of the Unit, and also sampled across all dune formation types present and accessible. 
+
+While *S. spathulata* is common across nearly all habitats, and essentially the dominant species in all dune areas, *E. glaucus* is less common across the area. To achieve a balanced sample between these two taxa *E. glaucus* served as the limiting factor. Nearly all measurements of these taxa, less the shade *S. spathulata* measurements occurred where the plants were con-specific, nearly always growing within 1m of each other, and generally without any other vascular plant taxa within a meter. 
+
+To minimize the effects of spatial-autocorrelation, an effect whereby more closely spaced plants are subject to more similar abiotic and biotic variables, as well as to reduce the chances of kinship between the measured individuals an estimated buffer of 10 meters existed between any measured individuals. Plant pairs were chosen haphazard-randomly in the field, with plants down a topographic feature from another measured pair excluded (these deemed likely to be close kin of an already measured pair). Furthermore the plant pairs were located perpendicular to the main incipient wind direction to reduce kinship as a result of these taxa both utilizing anemochory *(i.e. wind dispersal)*.
+
+The individual leaves on the plants were randomly sampled haphazardly by the surveyor closing their eyes, and moving a mechanical pencil tip down towards the plant and opening eyes to see the intercept of the point to plant. The youngest leaves in a basal rosette were excluded - as they are too small to be used by *M. wheeleri*, as were leaves which had already been 'leaf cut' which could not have all attributes collected, or were evidently misformed.
+
+## Data Attributes & Metadata
+
+**taxon:** A four-letter code indicating which plant species the following data were collected from. It has three levels:
+
+1) SOSP = **So**lidago **sp**athulata
+2) ERGL = **Er**igeron **gl**aucus
+3) MOCA = **Mo**rella **ca**lifornica 
+
+**site:** A numeric value referring to a distinct site that the taxa were present at. This has no value as a predictor and rather helped with data collection and entry.
+
+**latitude:** A line intersecting the site on the Earths surface parallel to the Equator. This is a predictor to determine spatial auto-correlation in reponse variables.
+
+**longitude:** A line intersecting the site on the Earths surface parallel to the Prime Meridian. This is a predictor to determine spatial auto-correlation in reponse variables.
+
+*Note our latitude and longitude were collected on the North American Datum 1983 using a Garmin Etrex10 with waypoint averaging and all reaching 100% COnfidence Interval of being within 2-5 meters of the true NAD83 coordinates.*
+
+**number_teeth:** The number of leaf teeth on either side of the leaf. For *S. spathulata* these values do not include the apical pair of teeth, hence each of these can be treated as 'number_teeth' + 1. A count, response variable, which may need to be treated as categorical due to zero-inflation in *E. glaucus*.
+
+**glands:** Whether the individual leaf teeth bear glands at their apices. A binary trait with 'Present' or 'Absent'.
+
+**tooth_spacing:** The distance between the apices of the individual teeth margins. For *E. glaucus* these values are between each pair of teeth on each leaf side, but not from the final teeth *(i.e. the most distal pair of teeth from the petiole)* to the leaf tip (apex). For *S. spathulata & Morella californica* these are three randomly selected teeth pairs along each side of the leaf. **Note** in all taxa these values are ordered from the pairs most close to the petiole *(i.e. proximal)* to pairs further from the petiole *(i.e. distal)*. This continuous measurement is in 64th units of an inch, allowing for conversion to millimeters with a single decimal place (i.e. a micrometer).
+
+**leaf_length_mm:** The distance from the base of the petiole *(i.e. the attachment point to the stem)* to the leaf apex, or in some instances, when the ultimate pair of leaf tips exceed the apex, the final pair of leaf teeth. This continuous measurement is in integers of millimeters.
+
+**leaf_width_mm:** The distance at the widest point of the leaf blade across itself, note in some instances especially for *S spathulata* this will include the teeth. It was easier to include the teeth than try and determine the difference between the blade and teeth serrations. This continuous measurement is in integers of millimeters.
+
+**leaf_tip_exceeded_by_teeth:** This attribute refers to whether the final two pairs of leaf teeth *(the distal pair)* exceed the leaf tip (the lefa tip determined as being directly above the midvein of the leaf). A binary trait with 'True' or 'False.'
+
+**leaf_type:** The type of leaf which the measurements were acquired from. A categorical independent variable with two levels, 'Basal' or 'Cauline'. 
+
+**sun:** Indicates whether the plant is under the shade of a tree for the entirety of the day. A categorical independent variable with two levels 'Full' or 'Shade'.
+
+**date:** the date these data were acquired, in Month.Day.Year format. They serve to document days of field work but have no value as predictor variables.
+
+**site:** A site name for the area these data were collected from. As we have latitude and longitude, these have little value as predictors.
+
+For the *Morella californica* data scored from herbaria several extra columns exist which have to do with it being an herbarium specimen. 
+
+**leafcuts** I collected data on the presence of leafcuts on the specimens as I scored. I have to no plans to use this immediately, not all of the 'Yes' value are *Megachile* spp. cuts, some of them appear to be catepillar or other. 
+
+**mm_conversion** As these data were scored from images of herbaria sheets I needed to calibrate my rulers to the resolution of the sheets. This value represents how many millimeters of my ruler, is equal to 1 cm on the ruler adjacent to the herbarium sheet in the image.
+
+**imperial_fract** As these data were scored from images of herbaria sheets I needed to calibrate my rulers to the resolution of the sheets. This value represents the fractions of my imperial ruler, is equal to 1 cm on the ruler adjacent to the herbarium sheet in the image.
+
+**sampled** This refers to whether this accession was sampled for leaf traits or not. If the accession was not sampled, than it will also contain a reason why it was not sampled.
+
+**oversamp** Will include the number of the oversample which replaced the initial random draw. 
+
+The other assorted columns are explained in the script 'nest_cell_leaves_morella' where we set up and chose which specimens to sample. 
+
+```{r, out.width="50%", fig.align="center", echo = F, fig.cap="Stylized illustrations indicating collected traits. S. spathulata (R), E. glaucus (L)."}
+knitr::include_graphics(paste0(here::here(),"/images/leaf_traits.jpg"))
+```
+
+## Predictors we Hope to Eliminate
+
+As mentioned above we have 14 raw attributes from the field. Note that longitude and latitude and related, and used soley to detect auto-correlation. Our unit of analysis is the population of the taxon, reducing this to a grouping variable, reducing attributes to 11. As mentioned, 'date', 'site',  and relicts of book-keeping and unncessary. This leaves us with nine variables. 
+
+Sun, Leaf Type, Leaf Width, Leaf Length, and Number of Teeth, are all predictor variables we hope to throw away. By throw away I mean I hope that the leaves in both full Sun and Shade have similar rates of glandularity, leaf tips exceeding teeth, and spacing of leaf teeth. Likewise, I hope that these traits are similar regardless of leaf size, and that these traits hold regardless of the number of teeth present on a leaf.
+
+It might seem a little confusing why I would hope for this, but remember, that only a portion of a leaf is present in the nest cell. We hope that any of these traits might be enough to distinguish the three species of leaves.
+
+Other notes: The inception of this script powered by Phish & Pabst Blue Ribbon. 'The Man Who Stepped Into Yesterday' -> 'Space Funk 3.0'
+
+\newpage
+# Analyses
+
+Well words are nice but numbers are what count. Although, if all this fails I am ready to write a key on traits not included here.
+
+## Import Data
+
+I was down to just one computer booted with Linux Mint and which failed to be able to load many libraries. Way too late into the game I realized I could use 'data.table' which was a blessing.
+```{r Libraries, message=FALSE, warning=FALSE}
+library(data.table)
+```
+
+```{r, echo = F}
+#here::set_here('..')
+file <- paste0(here::here(), '/data/raw/',
+               list.files(paste0(here::here(), '/data/raw/'), 
+             pattern = "csv$")
+             )
+
+file <- file[stringr::str_detect(file, 'morphometrics[.]csv')]
+data <- read.csv(file, stringsAsFactors = F)
+names(data)[2] <- 'group'
+data$imperial_fract <- 1
+
+set.seed(125)
+
+data1 <- read.csv(file[2], stringsAsFactors = F)
+data1 <- data1[1:65,c(3,9:17,19:20)]
+data1 <- data1[complete.cases(data1[ , 6]),] # this will drop the unsampled rows. 
+data1$group <- seq(82, 135, by = 1)
+                     
+rm(file)
+```
+
+Here we tidy up the herbarium data so the values are confluent with those from the field data. 
+```{r, echo = F}
+data1$mm_conversion <- data1$mm_conversion / 10
+
+i <- c("leaf_length_mm", "leaf_width_mm")
+data1[ , i] <- apply(data1[ , i], 2,          # Convert both columns to true measurements. 
+                    function(x) round(((x)/data1$mm_conversion), 0))
+
+data1$imperial_fract <- gsub("/64", "", data1$imperial_fract)
+data1$imperial_fract <- as.numeric(as.character(data1$imperial_fract))
+data1$imperial_fract <- data1$imperial_fract / 10
+
+data1 <- data1[,c(2:10,12:13)]
+data1$taxon <- "morella_californica"
+data1$latitude <- 1
+data1$longitude <- 1
+data1$site <- 'herbarium'
+
+data <- rbind(data, data1)
+
+rm(i, data1)
+```
+
+
+I did not want to burn through too much paper in my notebook so have these data set up in a funny way. The cells which contain a couple measurements are delimited by a semicolon to store attributes from opposite margins of the leaves.
+```{r}
+data$teeth.1 <- gsub(";.+$", "", data$number_teeth)
+data$teeth.2 <- gsub("^.+;", "", data$number_teeth)
+data$number_teeth <- NULL
+
+data <- reshape(data, direction = "long", varying = c("teeth.1","teeth.2"), timevar = "leaf_side")
+
+data$leaf_side <- ifelse(data$leaf_side == 1,"L","R")
+row.names(data) <- NULL
+data$teeth <- as.numeric(data$teeth)
+```
+
+The same delimiting was used for the leaf teeth spacing.
+```{r, echo = F}
+data$tooth.L <- gsub(";.+$", "", data$tooth_spacing)
+data$tooth.R <- gsub("^.+;", "", data$tooth_spacing)
+data$tooth_spacing <- NULL
+
+var <- t(as.matrix(strsplit(data$tooth.L, ",")))
+mx <- max(length(var)) # @ akrun wizard
+df <- t(data.frame(lapply(var, 'length<-' ,mx))) # @ akrun wizard
+row.names(df) <- NULL
+df <- df[,1:3]
+colnames(df) <- c("L_space.1", "L_space.2", "L_space.3")
+df <- as.data.frame(df)
+df$space_side_L <- "L"
+
+df[ ,1:3] <- apply(df[ ,1:3], 2,            # convert all values to numeric
+                    function(x) as.numeric(as.character(x)))
+df[is.na(df)] = 0 
+data <- cbind(data, df)
+
+var <- t(as.matrix(strsplit(data$tooth.R, ",")))
+mx <- max(length(var)) # @ akrun wizard
+df <- t(data.frame(lapply(var, 'length<-' ,mx))) # @ akrun wizard
+row.names(df) <- NULL
+df <- df[,1:3]
+colnames(df) <- c("R_space.1", "R_space.2", "R_space.3")
+df <- as.data.frame(df)
+df$space_side_R <- "R"
+
+df[ ,1:3] <- apply(df[ ,1:3], 2,            # convert all values to numeric
+                    function(x) as.numeric(as.character(x)))
+df[is.na(df)] = 0 
+data <- cbind(data, df)
+
+rm(var, mx, df)
+
+data <- setDT(data, key = 'id')
+teeth_long = melt(data, id.vars = c( "id"),
+            measure.vars = c("L_space.1", "L_space.2", "L_space.3", "R_space.1", "R_space.2", "R_space.3"), 
+            variable.name = "LT_position", value.name = "LT_measurement")
+
+teeth_long$LT_side <- gsub("_.*$", "", teeth_long$LT_position)
+teeth_long$LT_position <- gsub("^.+_", "", teeth_long$LT_position)
+
+teeth_long <- unique(teeth_long)
+data <- data[,1:16]
+
+data <- data[teeth_long, on = "id", allow.cartesian=TRUE]
+
+rm(teeth_long)
+```
+
+I used 'Yes' or 'No' to describe the presence or absence of a trait. We will change these into Yes = 1, or NO = 0
+```{r}
+data$glands <- ifelse(data$glands=="Y",1,0)
+data$leaf_tip_exceeded_by_teeth <- ifelse(data$leaf_tip_exceeded_by_teeth=="Y",1,0)
+```
+
+## QA Data and Understand Distributions of Traits.
+
+Compare our ranges of values to those from *Flora of North America*. Let's see how well the trait values from our single population match up to those from across the species. 
+
+*S. spathulata* **[leaves]** "40–120 × 10–30 mm"
+
+*E. glaucus* **[leaves]** "20–130(–150) × 10–30(–50) mm... margins entire or with 2–4 pairs of shallow teeth"
+
+*M. californica* **[leaves]** "40-130 × 7-31" mm NOTE: this was in cm and I moved a decimal to mm here.
+
+```{r, echo = F}
+data_sub <- data[!duplicated(data[,'id']),]
+sol_spa <- data_sub[data_sub$taxon == "solidago_spathulata",]
+eri_gla <- data_sub[data_sub$taxon == "erigeron_glaucus",]
+mor_cal <- data_sub[data_sub$taxon == "morella_californica",]
+
+par(mfrow=c(3,2), mar = c(2,1,1,1))
+sol_spa <- sol_spa[order(leaf_length_mm,)]
+dotchart(sol_spa$leaf_length_mm, color = 'goldenrod1', pch = 19,
+                  main = "S. spathulata Leaf Length (mm)", xlim = c(35, 135))
+abline(v = 40)
+abline(v = 120)
+
+sol_spa <- sol_spa[order(leaf_width_mm,)]
+dotchart(sol_spa$leaf_width_mm,  color = 'goldenrod1', pch = 19,
+                  main = "S. spathulata Leaf Width (mm)", xlim = c(5, 35))
+abline(v = 10)
+abline(v = 30)
+
+eri_gla <- eri_gla[order(leaf_length_mm,)]
+dotchart(eri_gla$leaf_length_mm, color = 'darkorchid1', pch = 19,
+                  main = "E. glaucus Leaf Length (mm)", xlim = c(15, 135))
+abline(v = 20)
+abline(v = 130)
+
+eri_gla <- eri_gla[order(leaf_width_mm,)]
+dotchart(eri_gla$leaf_width_mm,  color = 'darkorchid1', pch = 19,
+                  main = "E. glaucus Leaf Width (mm)", xlim = c(5, 35))
+abline(v = 10)
+abline(v = 30)
+
+mor_cal <- mor_cal[order(leaf_length_mm,)]
+dotchart(mor_cal$leaf_length_mm,  color = 'forestgreen', pch = 19,
+                  main = "M. californica Leaf Length (mm)", xlim = c(35, 135))
+abline(v = 40)
+abline(v = 130)
+
+mor_cal <- mor_cal[order(leaf_width_mm,)]
+dotchart(mor_cal$leaf_width_mm,  color = 'forestgreen', pch = 19,
+                  main = "M. californica Leaf Width (mm)", xlim = c(5, 35))
+abline(v = 7)
+abline(v = 31)
+
+```
+
+We see that the variability of *S. spathulata* is well reflected in our single population in both leaf length and leaf width. This makes me feel comfortable that we have adequately sampled the natural variation in the population. I have a few 'shorter' leaves than what the monograph indicates, but overall I am not worried as I did try to sample from leaves which would not have been considered mature. I am also not too worried about leaf width, as mentioned elsewhere the taxonomist who wrote the monograph and myself may have measured different things, i.e. he measured across blade and subtracted teeth width - an area I kept. 
+
+However, we that the variability of *E. glaucus* we sampled does not reflect the range of variation known from the species. I suspect this is due to their being more variation in gross morphology across the species, and between the populations than is present in *S. spathulata*. Another issue could be that *E. glaucus* likely only 3x5 times the number of individuals in the population than the number we sampled where *S. spathulata* must have had at least 20x the number of individuals in the population. There could be less variation as a result. On another note, I have seen this taxon in a few places and those 12 cm measurements are much larger than anything I have personally seen - this could be an expression in the North (although a view of sheets on CPNWH do not attest to that). 
+
+I believe that the values in *M. californica* are an artifact of measuring from herbarium sheets on a computer screen. I had to maximize resolution and this meant larger leaves could not be sampled. Alternatively, older leaves may be larger than those on flowering material and it is a bias in herbairum collections. However I think the former is more plausible. 
+
+Regardless, no red flags pop up as measurement or transcription errors here. 
+
+Check for even and odds in measurements, let's see if their is a trend of bias in measurement here.
+
+```{r, echo = F}
+data$LL <- ifelse(data$leaf_length_mm %% 2 == 0, 'EVEN', 'ODD')
+data$LW <- ifelse(data$leaf_width_mm %% 2 == 0, 'EVEN', 'ODD')
+
+data_sub <- data[!duplicated(data[,'id']),]
+sol_spa <- data_sub[data_sub$taxon == "solidago_spathulata",]
+eri_gla <- data_sub[data_sub$taxon == "erigeron_glaucus",]
+mor_cal <- data_sub[data_sub$taxon == "morella_californica",]
+data <- subset(data, select = - c(LL, LW))
+
+par(mfrow=c(2,4), mar = c(2,2,2,1))
+barplot(prop.table(table(sol_spa$LL)), col = "goldenrod1", xlab = "", main = "SOSP Leaf length", sub = "n = 80")
+barplot(prop.table(table(eri_gla$LL)), col = "darkorchid1", xlab = "", ylab = "", main = "ERGL Leaf length", sub = "n = 53")
+barplot(prop.table(table(mor_cal$LL)), col="forestgreen",  xlab = "", ylab = "", main = "MOCA leaf length", sub = "n = 55")
+barplot(prop.table(table(data_sub$LL)), col = "darkslategray4", ylab = "", main = "Combined Leaf Length", sub = "n = 188")
+
+barplot(prop.table(table(sol_spa$LW)), col = "goldenrod1", main = "SOSP Leaf width")
+barplot(prop.table(table(eri_gla$LW)), col = "darkorchid1", main = "ERGL Leaf width" , ylab = "", xlab = )
+barplot(prop.table(table(mor_cal$LW)), col="forestgreen", main = "MOCA Leaf width", ylab = "")
+barplot(prop.table(table(data_sub$LW)), col = "darkslategray4", main = "Combined Leaf Width")
+
+```
+We see I tend to go odd (4) more often than even (2). But once the numbers are tallied together it comes out with the wash, in my very biased opinion. 
+
+Let's check leaf teeth for outliers. 
+  
+```{r, echo = F}
+par(mfrow=c(1,3), mar = c(3,1,2,1))
+sol_spa <- sol_spa[order(teeth,)]
+eri_gla <- eri_gla[order(teeth,)]
+mor_cal <- mor_cal[order(teeth,)]
+
+dotchart(sol_spa$teeth, color = 'goldenrod1', pch = 19,
+                  main = "S. spathulata Leaf teeth")
+dotchart(eri_gla$teeth, color = 'darkorchid1', pch = 19,
+                  main = "E. glaucus Leaf teeth")
+dotchart(mor_cal$teeth, color = 'forestgreen', pch = 19,
+                  main = "E. glaucus Leaf teeth")
+
+rm(data_sub)
+```
+
+Nothing is sticking out as out of place. 
+
+Now let's check the distance between leaf teeth
+
+```{r, echo = F}
+sol_spa <- data[data$taxon == "solidago_spathulata",]
+eri_gla <- data[data$taxon == "erigeron_glaucus",]
+mor_cal <- data[data$taxon == "morella_californica",]
+sol_spa <- sol_spa[order(LT_measurement,)]
+eri_gla <- eri_gla[order(LT_measurement,)]
+mor_cal <- mor_cal[order(LT_measurement,)]
+
+par(mfrow=c(1,3), mar = c(3,1,3,1))
+dotchart(sol_spa$LT_measurement, color = 'goldenrod1', pch = 19,
+                  main = "S. spathulata \n Leaf Teeth Distance (mm)")
+dotchart(eri_gla$LT_measurement, color = 'darkorchid1', pch = 19,
+                  main = "E. glaucus \n Leaf Teeth Distance (mm)")
+dotchart(mor_cal$LT_measurement, color = 'forestgreen', pch = 19,
+                  main = "M.  californica \n Leaf Teeth Distance (mm)")
+```
+
+Nothing is sticking out as out of place. We see that *E. glaucus* leaves are generally entire.
+
+Let's check if the side of the leaf with more leaf teeth generally has shorter spacing between leaf teeth
+
+```{r}
+mean <- data[ ,list(mean=mean(teeth)), by = c('taxon', 'id')]
+data <- data[mean, on = c('taxon', 'id')]
+data[teeth == mean, symmetry := "symmetrical"] # dang d.t. is slick
+data[teeth > mean, symmetry := "long"]
+data[teeth < mean, symmetry := "short"]
+data$symmetry <- as.factor(data$symmetry)
+
+sol_spa <- data[data$taxon == "solidago_spathulata",]
+eri_gla <- data[data$taxon == "erigeron_glaucus",]
+mor_cal <- data[data$taxon == "morella_californica",]
+data[,c('symmetry', 'mean'):=NULL]
+
+sol_spa <- sol_spa[order(LT_measurement,)]
+eri_gla <- eri_gla[order(LT_measurement,)]
+mor_cal <- mor_cal[order(LT_measurement,)]
+
+# everything down here is fucking damn dumb and i was tired and not sure how the hell i managed to infect the world with so much stupid. 
+
+dotchart(mor_cal$LT_measurement, groups = as.factor(mor_cal$symmetry),  color = 'forestgreen', pch = 19,
+                  main = "M.  californica \n Leaf Teeth Distance (mm)")
+
+levels(mor_cal$symmetry)
+
+boxplot(LT_measurement ~ symmetry, data = sol_spa, notch = TRUE,
+        xlab = "Symmetry", ylab = "Length of Leaf Teeth",
+        main = "Comparision of Leaf Teeth Length as affected by leaf Symmetry",
+        frame = FALSE, col = c("darkorchid1", "forestgreen", "darkgoldenrod1"),
+        names = c("long", "short", "symmetrical"))
+
+pairwise.wilcox.test(sol_spa$LT_measurement, sol_spa$symmetry, p.adjust.method = "bonferroni")
+
+boxplot(LT_measurement ~ symmetry, data = mor_cal, notch = TRUE,
+        xlab = "Symmetry", ylab = "Length of Leaf Teeth",
+        main = "Comparision of Leaf Teeth Length as affected by leaf Symmetry",
+        frame = FALSE, col = c("darkorchid1", "forestgreen", "darkgoldenrod1"),
+        names = c("long", "short", "symmetrical"))
+
+boxplot(LT_measurement ~ symmetry, data = eri_gla, notch = TRUE,
+        xlab = "Symmetry", ylab = "Length of Leaf Teeth",
+        main = "Comparision of Leaf Teeth Length as affected by leaf Symmetry",
+        frame = FALSE, col = c("darkorchid1", "forestgreen", "darkgoldenrod1"),
+        names = c("long", "short", "symmetrical"))
+
+rm(mean)
+```
+
+
+I assume leaf length and leaf width are related, and was planning on using leaf length alone as a predictor when needed, Let's see if this caution is warranted. 
+
+```{r, echo = F}
+par(mfrow=c(3,1), mar = c(4,2,2,1))
+
+plot(sol_spa$leaf_width_mm, sol_spa$leaf_length_mm, col = 'goldenrod1', pch = 19, 
+     xlab = "Leaf Width (mm)", 
+     ylab = "Leaf Length (mm)",
+     main = "S. spathulata")
+abline(lm(leaf_length_mm ~ leaf_width_mm, data = sol_spa))
+text(12.5, 105, "R2 = 0.4702 \n p = < 2.2e-16")
+
+plot(x= eri_gla$leaf_width_mm, y = eri_gla$leaf_length_mm, col = 'darkorchid1', pch = 19, 
+     xlab = "Leaf Width (mm)", 
+     ylab = "Leaf Length (mm)",
+     main = "E. glaucus")
+abline(lm(leaf_length_mm ~ leaf_width_mm, data = eri_gla))
+text(10.25, 65, "R2 = 0.4594 \n p = < 2.2e-16")
+
+plot(x = mor_cal$leaf_width_mm, y = mor_cal$leaf_length_mm, col = 'forestgreen', pch = 19, 
+     xlab = "Leaf Width (mm)", 
+     ylab = "Leaf Length (mm)",
+     main = "M. californica")
+abline(lm(leaf_length_mm ~ leaf_width_mm, data = mor_cal))
+text(9.25, 100, "R2 = 0.5987 \n p = < 2.2e-16")
+
+```
+
+It's seems they are related. We will continue on doing what was intuitively obvious.
+
+Check for spatial auto-correlation. We hope that each plant is independent of each other. However, plants close to each other in space have a higher porbability of being related, and experiencing the the same habitat *(i.e. both similar Nature and Nurture)*. While spatial-autocorrelation is generally thought of as being related to similar abiotic factors, I extend it as a meager endeavor to search for more genetic structure. 
+```{r}
+
+```
+
+
+## Trait 1. Leaf Glandularity
+
+This refers to whether the apices of individual tooth on the leaf margins have a short gland. This gland is located atop a reddish hued apex. Not every tooth on each leaf will have this feature but most do. 
+
+In *Erigeron glaucus* the leaf tips will come to a similar apex but lack the minor opaque gland which generally surmounts the *Solidago spathulata* material. 
+```{r, echo = F}
+data1 <- data[!duplicated(data[,'id'])]
+trait_1 <- aggregate(data1$glands, by=list(taxon=data1$taxon), FUN=mean)
+test <- aggregate(cbind(count = taxon) ~ taxon, 
+          data = data1, 
+          FUN = function(x){NROW(x)})
+trait_1$x <- trait_1$x * 100
+trait_1 <- merge(trait_1, test)
+trait_1[1,1] <- "E. glaucus"
+trait_1[2,1] <- "M. californica"
+trait_1[3,1] <- "S. spathulata"
+
+knitr::kable(
+  trait_1,
+  col.names = c('Species', 'Percent', 'Plants'),
+  caption = "Percent of Individuals with glandular leaf teeth apices",
+  digits = 1
+)
+
+rm(trait_1, test)
+```
+
+Unfortunately this trait could not be ascertained for *Morella californica* because the scans were not of the appropriate resolution to do so. 
+
+## Trait 2. Leaf Apice Exceeded by Leaf Teeth
+
+In *S, spathulata* the last two apical teeth on either side of the leaf generally exceeded the leaf apex - which has a prominent mid vein leading to it, in *S. spathulata*. Note that *S. spathulata* leaves are often slightly curved to a side and assymetric (hence why both sides of the leaf are measured for several variables), so this needs to be discerned up off the midrib.
+
+To keep this trait as a function with a simple binomial response, even if one of the terminal leaf tooth apices is longer than the leaf apex this trait is considered 'Present'. 
+```{r, echo = F}
+trait_2 <- aggregate(data$leaf_tip_exceeded_by_teeth, by=list(taxon=data$taxon), FUN=mean)
+trait_2$x <- trait_2$x * 100
+test <- aggregate(cbind(count = taxon) ~ taxon, 
+          data = data1, 
+          FUN = function(x){NROW(x)})
+
+trait_2 <- merge(trait_2, test)
+
+trait_2[1,1] <- "E. glaucus"
+trait_2[2,1] <- "M. californica"
+trait_2[3,1] <- "S. spathulata"
+
+knitr::kable(
+  trait_2,
+  col.names = c('Species', 'Percent', 'Plants'),
+  caption = "Percent of Individuals with leaf apex exceeded by distal leaf teeth.",
+  digits = 1
+)
+```
+
+We see *S. spathulata* has many more leaves with leaf apices exceeded by distal leaf teeth. 
+```{r, echo = F}
+kruskal.test(data = data, leaf_tip_exceeded_by_teeth ~ taxon)
+```
+Using a Kruskal-Wallis test we see that there are clear differences between the species.
+
+```{r, echo =F}
+pairwise.wilcox.test(data$leaf_tip_exceeded_by_teeth, data$taxon, p.adjust.method = "bonferroni")
+```
+
+Using a Wilxocon rank sum test we see that *S. spathulata* are distinctly different from both *M. californica* and *E. glaucus*. And that both *M. californica* and *E. glaucus* are slightly different from each other.
+
+```{r, echo = F}
+rm(trait_2, data1)
+```
+
+From field work it seemed that the odds of a short leaf having leaf teeth greater than the leaf apex was high. We will use Binary logistic regression or 'Logistic Regression' to determine if there is some merit to this observation 
+```{r, echo = F, fig.cap="Logistic Binomial Test exploring the relationship between Leaf Length and Distal Leaf Teeth exceeding the Leaf Apex."}
+
+data_sub <- data[!duplicated(data[,'id']),]
+sol_spa <- data_sub[data_sub$taxon == "solidago_spathulata",]
+
+model <- glm(leaf_tip_exceeded_by_teeth ~ leaf_length_mm, data=sol_spa, family=binomial)
+summary(model)
+#define new data frame that contains predictor variable
+newdata <- data.frame(leaf_length_mm=seq(min(sol_spa$leaf_length_mm), max(sol_spa$leaf_length_mm),len=500))
+
+#use fitted model to predict values of vs
+newdata$leaf_tip_exceeded_by_teeth = predict(model, newdata, type="response")
+
+#plot logistic regression curve
+plot(leaf_tip_exceeded_by_teeth ~ leaf_length_mm, data=sol_spa, col="goldenrod1", pch = 19, main = "Binary Logistic Regression of Leaf Apex \n being exceeded by Distal Leaf Teeth in S. spathulata",
+   xlab="Leaf Length", ylab="Presence/Absence of Leaf Teeth" )
+lines(leaf_tip_exceeded_by_teeth ~ leaf_length_mm, newdata, lwd=2)
+
+```
+
+The p-value is significant, and the difference between the null and fitted models is somewhat large. On the other hand, the curve of the regression is weakly sigmoidal. I doubt this model can predict whether a leaf of a certain length will have a tip exceeded by the distal pair of leaf teeth much better than a coin toss. A more vertical slope would be a better indication of a strong transition - one unlikely to exist in this context. 
+
+```{r}
+probabilities <- predict(model, type = "response")
+predicted.classes <- ifelse(probabilities > 0.5, 1, 0)
+mean(predicted.classes == sol_spa$leaf_tip_exceeded_by_teeth)
+```
+
+```{r, echo = F}
+rm(probabilities, predicted.classes,data_sub, sol_spa, model, newdata )
+```
+
+Actually, it looks like this model can accurately classify whether the leaf tip will be exceeded 66% of the time. So we can say there is a relationship between the developement of a leaf and this trait. Interesting, but I don't think this is important enough to make it to a key, and we will note this trait may be present as outlined in the summary table at the start of this section.
+
+## Trait 3. Number of Leaf Teeth
+This will include the number of teeth from both sides of the leaves. 
+```{r, fig.show="hide", echo =F}
+
+data_sub <- data[!duplicated(data[,c('id','teeth')]),]
+
+eri_gla <- data_sub[data_sub$taxon == "erigeron_glaucus",]
+p1 <- hist(eri_gla$teeth) 
+
+sol_spa <- data_sub[data_sub$taxon == "solidago_spathulata",]
+p2 <- hist(sol_spa$teeth)  
+
+mor_cal <- data_sub[data_sub$taxon == "morella_californica",]
+p3 <- hist(mor_cal$teeth)
+
+# We will now create theoretical normal curves across the range of values for both taxa to compare our histograms to. 
+
+xfit_ERGL <- seq(min(eri_gla$teeth), max(eri_gla$teeth), length = 50) # @ gregor thomas code. 
+yfit_ERGL <- dnorm(xfit_ERGL, mean = mean(eri_gla$teeth), sd = sd(eri_gla$teeth))
+yfit_ERGL <- yfit_ERGL * diff(p1$mids[1:2]) * length(eri_gla$teeth)
+
+xfit_SOSP <- seq(min(sol_spa$teeth), max(sol_spa$teeth), length = 50)
+yfit_SOSP <- dnorm(xfit_SOSP, mean = mean(sol_spa$teeth), sd = sd(sol_spa$teeth))
+yfit_SOSP <- yfit_SOSP * diff(p2$mids[1:2]) * length(sol_spa$teeth)
+
+xfit_MOCA <- seq(min(mor_cal$teeth), max(mor_cal$teeth), length = 50) # @ gregor thomas code. 
+yfit_MOCA <- dnorm(xfit_MOCA, mean = mean(mor_cal$teeth), sd = sd(mor_cal$teeth))
+yfit_MOCA <- yfit_MOCA * diff(p3$mids[1:2]) * length(mor_cal$teeth)
+
+# We will now create theoretical poisson distribution curves across the range of values of values for both taxa to compare our histograms to.
+
+xfit_ERGL_pois <- seq(min(eri_gla$teeth), max(eri_gla$teeth))
+yfit_ERGL_pois <- dpois(xfit_ERGL_pois, lambda= mean(eri_gla$teeth))
+yfit_ERGL_pois <- yfit_ERGL_pois * diff(p1$mids[1:2]) * length(eri_gla$teeth)
+
+xfit_SOSP_pois <- seq(min(sol_spa$teeth), max(sol_spa$teeth))
+yfit_SOSP_pois <- dpois(xfit_SOSP_pois, lambda = mean(sol_spa$teeth))
+yfit_SOSP_pois <- yfit_SOSP_pois * diff(p2$mids[1:2]) * length(sol_spa$teeth)
+
+xfit_MOCA_pois <- seq(min(mor_cal$teeth), max(mor_cal$teeth))
+yfit_MOCA_pois <- dpois(xfit_MOCA_pois, lambda = mean(mor_cal$teeth))
+yfit_MOCA_pois <- yfit_MOCA_pois * diff(p2$mids[1:2]) * length(mor_cal$teeth)
+
+```
+
+```{r, echo = F, fig.cap="Histograms displaying distributions of the number of leaf teeth"}
+plot(p2, col="darkgoldenrod1", xlim=c(0,35), ylim=c(0,90), main = "Number of Leaf Teeth on E. glaucus, \n M. californica, & S. spathulata leaves",
+   xlab="Number of leaf teeth", ylab="Number of leaf margins")  # first histogram
+plot(p3, col="forestgreen", xlim=c(0,35), add=T)  # second
+plot(p1, col= "darkorchid1", alpha = 0.9, xlim=c(0,35), add=T) # 
+legend(25, 80, legend=c("E. glaucus", "M. californica","S. spathulata"),
+       fill=c(col="darkorchid1", "darkgoldenrod1", "forestgreen"),inset = 0.4, cex=0.8)
+lines(xfit_ERGL, yfit_ERGL, col = "black", lwd = 2, lty = 1)
+lines(xfit_SOSP, yfit_ERGL, col = "black", lwd = 2, lty = 1)
+lines(xfit_MOCA, yfit_MOCA, col = "black", lwd = 2, lty = 1)
+lines(xfit_ERGL_pois, yfit_ERGL_pois, col = "dodgerblue4", lwd = 2, lty = 5)
+lines(xfit_SOSP_pois, yfit_SOSP_pois, col = "dodgerblue4", lwd = 2, lty = 5)
+lines(xfit_MOCA_pois, yfit_MOCA_pois, col = "dodgerblue4", lwd = 2, lty = 5)
+legend(25.5, 55, legend = c("Normal", "Poisson"), col = c("black", "dodgerblue4"), lwd = 2, lty = c(1, 5), cex = 0.8)
+```
+
+We see two things here. One is that both distributions approach normal, but are right skewed as would be expected from count data and should be treated, as poisson distributions. The more important thing is that the number of leaf teeth -rarely if ever overlap. Note that the mean lines reflect this.
+
+```{r, echo = F, eval = F}
+SOSP_T <- sol_spa$teeth
+ks.test(SOSP_T, "pnorm", mean=mean(SOSP_T), sd=sd(SOSP_T))
+
+rm(SOSP_T)
+
+# We do not have to reject the null hypothesis that both the number of *S. spathulata* and that R's random distribution are the # same. But will do so anyways
+
+ERGL_T <- eri_gla$teeth
+ks.test(ERGL_T, "pnorm", mean=mean(ERGL_T), sd=sd(ERGL_T))
+MOCA_T <- mor_cal$teeth
+ks.test(MOCA_T, "pnorm", mean=mean(MOCA_T), sd=sd(MOCA_T))
+
+rm(ERGL_T, MOCA_T)
+```
+
+
+```{r, echo = F}
+rm(p1, p2, p3, xfit_ERGL, yfit_ERGL, xfit_SOSP, yfit_SOSP, xfit_ERGL_pois, yfit_ERGL_pois, xfit_SOSP_pois, yfit_SOSP_pois, xfit_MOCA, xfit_MOCA_pois, yfit_MOCA, yfit_MOCA_pois)
+```
+
+```{r, echo =F}
+kruskal.test(data = data, teeth ~ taxon)
+```
+We see that their are significant differences between groups via a Kruskal-Wallis test.
+
+```{r, echo = F}
+pairwise.wilcox.test(data$teeth, data$taxon, p.adjust.method = "bonferroni")
+```
+A pairwise Wilcox test shows us that the differences between each taxon are significant
+
+```{r, echo = F, warning = F, fig.cap="Boxplot showing the difference between the number of leaf teeth"}
+boxplot(teeth ~ taxon, data = data, notch = TRUE,
+        xlab = "Taxon", ylab = "Number of Leaf Teeth",
+        main = "Number of Leaf Teeth",
+        frame = FALSE, col = c("darkorchid1", "forestgreen", "darkgoldenrod1"),
+        names = c("E. glaucus", "M. californica", "S. spathulata"))
+```
+
+Again, we can see that the taxa vary in the number of leaf teeth they possess, and that outliers are seldom encountered.
+
+I am also curious if the number of leaf teeth are determined by the length of the leaf. 
+
+```{r, echo = F, fig.cap="Relationship between leaf length, and Sun level, on number of leaf teeth in S. spathulata"}
+plot(x = sol_spa$teeth,
+     y = sol_spa$leaf_length_mm,
+     pch = 19,
+     col = as.factor(sol_spa$sun),
+     main = "Relationship of leaf length to number of leaf teeth in S. spathulata",
+     xlab = "Number of teeth",
+     ylab = "Leaf length")
+legend('topright', legend = levels(as.factor(sol_spa$sun)), col = 1:2, cex = 0.8, pch = 19, title = "Sun Level")
+abline(lm(leaf_length_mm ~ teeth, data = sol_spa[sol_spa$sun == "FULL"]))
+abline(lm(leaf_length_mm ~ teeth, data = sol_spa[sol_spa$sun == "SHADE"]), col = "red")
+```
+
+We can see that there might be a weak relationship between these independent variables. At first glance it appears that shade leaves may have fewer teeth, and longer leaves. However, most of the scatter on this plot is horizontal across the x-axis rather than diagonally across the plot. 
+```{r, echo = F}
+lm_SOSP <- lm(data = sol_spa, formula = sol_spa$teeth ~ sol_spa$leaf_length_mm * sol_spa$sun)
+summary(lm_SOSP)
+summary(aov(lm_SOSP))
+```
+
+```{r, echo = F, fig.cap="Fit of model exploring predicting number of leaf teeth in S. spathulata as predicted by leaf length"}
+plot(x = sol_spa$teeth,                          # True values on x-axis
+     y = lm_SOSP$fitted.values,               # fitted values on y-axis
+     xlab = "True Values",
+     ylab = "Model Fitted Values",
+     main = "Regression fits of leaf length on leaf teeth",
+     ylim = c(5,30))
+abline(b = 1, a = 0)
+
+rm(lm_SOSP)
+```
+
+It appears that leaf length alone does not predict the number of leaf teeth. It seems that rather the level of sun or shade does have an effect on the number of teeth, which swamps out the effect of leaf length. While we see the level of sunshine does affect the number of leaf teeth, we cannot predict a leaves teeth from this variable. 
+
+
+```{r, echo = F}
+rm(eri_gla, mor_cal, sol_spa)
+```
+
+## Trait 4. Distance Between Leaf Teeth
+The units associated with the leaf teeth measurements collected in the field are not millimeters or inches. They are in 1/64 inches. This metric was used to acccomodate a higher resolution of measurement than the metric rulers I had on hand. 
+
+Because...
+$$
+1inch = 25.4 mm 
+$$
+...and these measurements were made in fractions of an inch
+$$
+\frac{25.4 mm}{64/1 inch} = 0.396875mm
+$$
+...We can multiply the product of our Imperial measurements to recover a Metric measurement:
+$$
+\frac{10 mm}{1/64 inch} * 0.396875mm 
+$$
+
+-- When *Morella* herbarium sheets were measured, I calibrated the 'inch' fractions to a single centimeter. Hence, to recover a metric measurement, we can perform the same conversion. 
+$$
+\frac{10 mm}{imperial fraction}  * measurement  = product 
+$$
+In R, all of these conversions may be carried out as such:
+```{r, warning= F}
+data$LT_measurement <- if(data$imperial_fract == 1){round(data$LT_measurement * 0.396875, 1)} else
+  {round(data$LT_measurement/data$imperial_fract, 1)}
+```
+
+Now that these data have been converted to the same units, millimeters with a single decimal point - i.e. they are at micrometer resolution. 
+
+```{r, echo = F, fig.show="hide"}
+eri_gla <- data[data$taxon == "erigeron_glaucus",]
+p1 <- hist(eri_gla$LT_measurement) 
+
+sol_spa <- data[data$taxon == "solidago_spathulata",]
+p2 <- hist(sol_spa$LT_measurement)  
+
+mor_cal <- data[data$taxon == "morella_californica",]
+p3 <- hist(mor_cal$LT_measurement)
+
+rm(eri_gla, sol_spa, mor_cal)
+```
+
+We visualize the distributions of these data here. Given that many of the leaves of *E. glaucus* were entire, and that *M. californica* has a wide range of teeth number, we can assume they are not normal. 
+
+```{r, echo = F, fig.cap="Histogram displaying distribution of distance between leaf teeth"}
+plot(p2, col="darkgoldenrod1", xlim=c(0,40), ylim=c(0,550), main = "Distance between leaf teeth in E. glaucus, \n M. californica, & S. spathulata",
+   xlab="Distance (mm)", ylab="Number of teeth pairs measured")  # first histogram
+plot(p3, col="forestgreen", xlim=c(0,35), add=T)  # second
+plot(p1, col= "darkorchid1", alpha = 0.9, xlim=c(0,35), add=T) # 
+legend(30, 450, legend=c("E. glaucus", "M. californica","S. spathulata"),
+       fill=c(col="darkorchid1", "forestgreen", "darkgoldenrod1"),inset = 0.4, cex=0.8)
+
+rm(p1, p2, p3)
+```
+
+We can inspect the distributions of the leaf traits numerically, although this approach provides little insight.  Note in this table we have removed (sub-)entire leaves (i.e. those with only 0-1 pairs of leaf teeth).
+```{r, echo = F}
+data_subset <- data[data$LT_measurement >= 1,]
+trait_4 <- aggregate(data_subset$LT_measurement, by=list(taxon=data_subset$taxon), FUN=mean)
+trait_4_sd <- aggregate(data_subset$LT_measurement, by=list(taxon=data_subset$taxon), FUN=sd)
+trait_4_med <- aggregate(data_subset$LT_measurement, by=list(taxon=data_subset$taxon), FUN=median)
+names(trait_4) <- c("taxon", "mean")
+names(trait_4_sd) <- c("taxon", "sd")
+names(trait_4_med) <- c("taxon", "median")
+
+test <- aggregate(cbind(count = taxon) ~ taxon, 
+          data = data_subset, 
+          FUN = function(x){NROW(x)})
+
+trait_4 <- merge(trait_4, trait_4_sd)
+trait_4 <- merge(trait_4, test)
+trait_4 <- merge(trait_4, trait_4_med)
+trait_4$sd1 <- trait_4$mean - trait_4$sd
+trait_4$sd2 <- trait_4$mean + trait_4$sd
+trait_4 <- trait_4[,c(1,5,6,2,7,4)]
+
+trait_4[1,1] <- "E. glaucus"
+trait_4[2,1] <- "M. californica"
+trait_4[3,1] <- "S. spathulata"
+
+knitr::kable(
+  trait_4,
+  col.names = c('Species', 'Median', 'S.D -1.', 'Mean',  'S.D. +1', 'Count'),
+  caption = "Distance between leaf teeth apices (when present) in mm.",
+  digits = 1
+)
+
+rm(trait_4, trait_4_med, trait_4_sd, test)
+```
+While the means are quite different, even at a single standard deviation great overlap between *E. glaucus* and *S. spathulata* exists. 
+
+```{r, echo = F}
+kruskal.test(data = data_subset, LT_measurement ~ taxon)
+```
+
+We see that there are significant differences between the groups
+```{r, echo = F}
+pairwise.wilcox.test(data_subset$LT_measurement, data_subset$taxon, p.adjust.method = "bonferroni")
+```
+
+We see that their notable differences between all taxa.
+
+```{r, echo = F}
+boxplot(LT_measurement ~ taxon, data = data_subset, notch = TRUE,
+        xlab = "Taxon", ylab = "Leaf Teeth Spacing (mm)",
+        main = "Distance between Leaf Teeth Spacing",
+        frame = FALSE, col = c("darkorchid1", "forestgreen", "darkgoldenrod1"),
+        names = c("E. glaucus", "M. californica", "S. spathulata"))
+
+```
+
+We see that each species has significantly different leaf teeth spacing. 
+```{r, echo = F, warning = F}
+rm(data_subset, data, data_sub)
+```
+
+# Conclusions & Key 
+
+Well, if you recall we had one objective here. To identify plant leaves from *Megachile wheeleri* nest cells to species. We have some decent data to go on, and I will also include some more from the literature (Giblin et al. 2018, Bornstein 2012, 2018). 
+
+It was a shame I did not have the opportunity to view more *Morella californica* material in person. However, there is a trait I did notice which Allan Bornstein uses in a break which may be an autapamoprhy distinguishing this taxon from those of the other West Coast genus in the family - *Myrica*; which is that the underside (abaxial) of the leaf has very large sessile ,usually dark, glands - which are densely distributed. 
+
+\newpage
+
+## Key Distinguishing *Megachile wheeleri* Nest Cell Materials
+
+1.. Leaf margin essentially entire to few toothed, generally with the few evident teeth separated by > 3.0 mm. If spaces between leaf teeth < 5 mm, than the teeth rarely if ever on angular- to almost blocky (serrate) projections, and essentially always lacking a tiny light gland at the apice. If a leaf apex is present, it is essentially always longer than the pair of leaf teeth adjacent to it. Leaf occasionally with dark glands on one side.... **2**
+
+1'. Leaf margin with several evident teeth, most of these generally separated by < 3.2 mm. If spaces between leaf teeth > 5 mm, than the upper teeth generally found on angular-to almost blocky (serrate) projections, and often with a tiny light gland on the apice. If a leaf apex is present, it occasionally is shorter than the pair of leaf teeth adjacent to it. Leaf never with darkish glands on one side.. **Solidago spathulata**
+
+2.. Leaf margin essentially entire, teeth or undulations when present usually rounded at tips, one surface of leaf not covered densely by dark round glands... **Erigeron glaucus**
+
+2'. Leaf margin with a couple teeth, these oftentimes coming to an evident point and generally pointing forward nearly parallel to the main blade. One side of the leaf covered with dark round glands... **Morella californica**
+
+\newpage
+# Citations
+
+Allan J. Bornstein 2012, Morella californica, in Jepson Flora Project (eds.) Jepson eFlora, https://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=80350, accessed on October 02, 2021.
+
+Alpert, P. and J.S. Kagan, 2019. Evaluation of Lanphere / Ma-le’l Dunes, Humboldt County, California for its Merit in Meeting National Significance Criteria as a National Natural Landmark to Represent Siskiyou – Klamath Coastal Sand Dunes in the North Pacific Border Biophysiographic Province. National Park Service Technical Report, National Natural Landmarks Program, Fort Collins, CO.
+
+Flora of North America Editorial Committee, eds. 1993+. Flora of North America North of Mexico [Online]. 22+ vols. New York and Oxford. vol. 3, 2019; http://beta.floranorthamerica.org. Accessed October, 2nd, 2021.
+
+Flora of North America Editorial Committee, eds. 1993+. Flora of North America North of Mexico [Online]. 22+ vols. New York and Oxford. vol. 17, 2019; http://beta.floranorthamerica.org. Accessed September, 30th, 2021.
+
+Giblin, D. 2018. Myricaceae Pp. 222 in Hitchcock, C.L. and A. Cronquist. 2018. Flora of the Pacific Northwest: An Illustrated Manual, 2nd Edition. Edited by D.E. Giblin, B.S. Legler, P.F. Zika, and R.G. Olmstead. University of Washington Press, Seattle, WA. 882 pp.
+
+Gordon, D.M., 1992. Interactions among the bee and plant communities in coastal dunes and the implications for conservation biology. pp. 112-118 in: Harris, R. R., & Erman, D. C. (Tech. Coord.), & Kerner, H. M. (ed.). 1992. Proc. of the Symposium on biodiversity of northwestern California. Oct. 28-30, 1991, Santa Rosa, CA. Wildland Resources Center Report 29, University of California, Berkeley, CA 94720
+
+Govaerts, R., Nic Lughadha, E., Black, N., Turner, R. & Paton, A. (2021). The World Checklist of Vascular Plants, a continuously updated resource for exploring global plant diversity. https://doi.org/10.1038/s41597-021-00997-6 Scientific Data 8: 215. [Cited as Myrica californica.]

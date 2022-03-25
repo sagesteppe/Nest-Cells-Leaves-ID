@@ -1,0 +1,212 @@
+---
+title: "Megachile wheeleri Nest cell leaves - Morella & Museums"
+author: "steppe & Em ?"
+output:
+  pdf_document:
+      fig_caption: true
+      number_sections: true
+      includes:
+        in_header: float_free.tex
+---
+
+\tableofcontents 
+\listoffigures
+\listoftables
+
+# A Beginning
+
+While measurements for *Solidago spathulata* and *Erigeron glaucus* leaves for the purposes of identifying Megachile wheeleri nest cells were obtained via field work at Lanphere dunes, *Morella californica* records come from Herbarium specimens.
+
+# Methods 
+
+## Data Acquisition
+
+The California Consortium of Herbaria 2 website was searched on October, 2nd 2021, at ca. 4:00 PM CST. The following search terms and toggles were used to filter the database:
+
+Taxonomic Criteria :
+(1) Include Synonyms
+(2) Morella californica
+
+Specimen Criteria: 
+(1) 'Limit to Specimens with data'
+(2) 'Limit to Specimens with Geocoordinates'
+  
+All other settings were maintained as defaults. The results, in 'Table Display' were then sorted by 'Collection Date' in an ascending order. All data were downloaded as Darwin Core, CSV, with UTF-8 encoding, with all 'Data Extensions'. 
+
+The Consortium of Pacific Northwest Herbaria was searched on October, 2nd 2021, at ca. 10:00 PM CST, filtered to only 'specimens with images'. A CSV file including longitude and latitiude was downloaded using a user profile which allowed for access to coordinates of collections in British Columbia where this is a sensitive taxon, and coordinates are generally scrubbed. 
+
+THe downloaded text file was loaded into LibreOffice Calc to load headers, which were problematic on import to R, and resaved as a comma seperated values document.
+
+## Sample Selection - Data Wrangling
+
+To ensure an equal number of samples of this taxon relative to *Erigeron glaucus* we subset the 91 possible observations down to 54. 
+
+Data attributes were acquired in the same manner as are reflected in the primary script for analysis. 
+
+```{r}
+files <- paste0(here::here(), "/data/raw/Morella_californica_CCH2_symbiota/",
+                list.files(paste0(here::here(), 
+                                  "/data/raw/Morella_californica_CCH2_symbiota/"), 
+                           pattern = "csv$")
+                )
+
+occ_files <- files[stringr::str_detect(files, 'occurrences')]
+occurrence_data <- read.csv(occ_files, stringsAsFactors = F, na.strings=c("","NA"))
+
+image_files <- files[stringr::str_detect(files, 'images')]
+image_data_link <- read.csv(image_files, stringsAsFactors = F, na.strings=c("","NA"))
+
+files <- paste0(here::here(), "/data/raw/",
+         list.files(paste0(here::here(), "/data/raw/"), pattern = ".csv"))
+files_cpnwh <- files[stringr::str_detect(files, 'CPNWH')]
+data_cpnwh <- read.csv(files_cpnwh, header = TRUE, stringsAsFactors = F, 
+                       na.strings=c("","NA"))[,1:100]
+
+set.seed(1125)
+rm(files, occ_files, image_files, files_cpnwh)
+```
+
+We join the neccessary specimen information and direct links to images of the specimens here from CCH2.
+```{r, echo = F}
+occurrence_data <- occurrence_data[,c('id', 'institutionCode','scientificName',
+                                      'eventDate', 'year', 'county',
+                                      'decimalLatitude', 'decimalLongitude',
+                                      'geodeticDatum', 'recordedBy')]
+image_data_link <- image_data_link[,c('coreid','goodQualityAccessURI','Owner',
+                                      'associatedSpecimenReference','MetadataDate')]
+
+names_herb <- names(occurrence_data)
+n <- names(image_data_link)
+n[1] <- "id"
+names(image_data_link) <- n
+
+data <- merge(occurrence_data, image_data_link, by = "id")
+
+rm(occurrence_data, image_data_link, n)
+```
+
+We will make our CPNWH data confluent with the CCH2 data.
+```{r}
+data_cpnwh <- data_cpnwh[c(1:32,34:40),]
+data_cpnwh$eventDate <- paste0(data_cpnwh$Year.Collected, sep = "-", data_cpnwh$Month.Collected, sep = "-", data_cpnwh$Day.Collected)
+data_cpnwh <- data_cpnwh[,c(1,3,14,101, 50, 54,61,62, 64, 45)]
+names(data_cpnwh) <- names_herb
+data_cpnwh[c("goodQualityAccessURI", "Owner", "associatedSpecimenReference", "MetadataDate")] <- NA
+
+data <- rbind(data, data_cpnwh)
+data$scientificName <- "Morella_californica"
+i <- c(1,5,7,8)
+data[ , i] <- apply(data[ , i], 2,            # convert all of these to numeric
+                    function(x) as.numeric(as.character(x)))
+
+rm(names_herb, data_cpnwh, i)
+```
+
+## Sample Selection - Sample Selection
+
+Let's see if any of these images are duplicates from the same collection. I am sure I am not the only person who collects in multiplicate from the same individual when it comes to shrubs and trees... We will use the collection date, the collector, and the county of collection together to remove records. 
+```{r}
+data$county <- gsub("County","", data$county) # the application of county is inconsistent across the records
+data$county <- gsub(" ", "_", data$county) # we will remove white spaces and replace with underscores so comparisions work better
+data$county <- gsub("_$", "", data$county) # there were some trailing white spaces which are now uncerscores, let's remove them. 
+
+data <- data[!duplicated(data[,c('eventDate','recordedBy', 'county')]),]
+```
+We are left with 124 records.
+
+As mentioned we want up to 54 measurements, and have 86 records. Let's remove some of the older material which tends to be in rougher condition. 
+```{r, fig.cap="Records from the California Consortium of Herbaria 2 (CCH2), and Consortium of Pacific Northwest Herbaria, across time"}
+hist(data$year, xlab = "Year", ylab = "Number of Collections", 
+     main = "Imaged Herbarium Collections of M. californica across Years", 
+     ylim=c(0,60))
+```
+
+We will remove records before 1940.
+```{r}
+data <- data[data$year >= 1950,]
+data <- data[!is.na(data$id),]
+```
+We are now left with 102 records. 
+
+\newpage
+
+Let's also see if many of these records are stacked on top of each other. 
+```{r}
+t <- as.data.frame(table(data$county))
+names(t) <- c('county', 'specimens')
+knitr::kable(t,
+             caption = "Distribution of Herbarium Records by County")
+rm(t)
+```
+
+I do not like that so many of the records are from Santa Barbara and San Luis Obispo county. We will downsample those so that there are only 7 possible records from those areas. We will leave Mendocino at 19, since those records are close to the study area. 
+
+```{r}
+SLOcal <- data[data$county == "San_Luis_Obispo",]
+SoCal <- data[data$county == "Santa_Barbara",]
+SoCal <- rbind(SLOcal, SoCal)
+
+data <- data[data$county != "San_Luis_Obispo",]
+data <- data[data$county != "Santa_Barbara",]
+
+
+SoCal <- do.call(rbind, 
+        lapply(split(SoCal, SoCal$county), 
+               function(x) x[sample(nrow(x), 7, replace = F), ]))
+        
+data <- rbind(data, SoCal)
+rownames(data) <- NULL
+
+rm(SoCal, SLOcal)
+```
+
+Alright well, the draw is the draw. We have 81 samples going in. We need 54 for balanced sampling, let's pull an extra 19 samples in case some of our first draw do not have enough detail (i.e. poor imaging resolution), to be used. 
+```{r}
+data <- data[!is.na(data$id),]
+oversample <- data[sample(nrow(data), 74), ] # possible oversamples
+sample <- oversample[sample(nrow(oversample), 54),] # samples from here to get the selected mamterial. 
+
+oversample <- data.table::setDT(oversample)[!sample, on = "id"] # just figured out I do have data.table on this computer... fml
+
+rm(data)
+```
+
+## Sample Selection - Export
+
+We will now 'order' the oversamples, i.e. they will be sampled in this order until we have the adequate sample size. 
+```{r}
+oversample$draw <- sample(20, size = nrow(oversample), replace = F)
+oversample <- oversample[order(draw)]
+
+sample$draw <- 0
+```
+
+Doesn't it suck when you randomly sample away your own collections? Damn 'seeds' cannot even act like I have to re-run the script. 
+
+Write out the list of specimens to sample.
+```{r}
+sample <- rbind(sample, oversample)
+sample <- sample[,c(1:2,4:5,10:11,13,15)]
+write.csv(sample, paste0(here(),"/data/raw/MoCa_herb_samples.csv"), row.names = F)
+rm(oversample)
+```
+
+write out a spreadsheet to record data on. 
+```{r}
+data <- read.csv(paste0(here::here(), "/data/raw/MoCa_herb_samples.csv"))
+data <- data[,c(5:13)]
+
+data$leafcuts <- NA # RECORD IF THEIR IS EVIDENCE OF A LEAFCUT...
+data$mm_conversion <- NA # COMPARE OUR MEASUREMENTS TO THE RULER STANDARD
+data$imperial_fract <- NA # WE NEED TO COMPARE OUR MEASUREMENTS TO THE RULER STANDARD
+
+new_df <- names(data) # Build a new Dataframe, not the simplest way to go forward but clearer with variable names. 
+new_df <- as.data.frame(t(new_df))
+new_df <- janitor::row_to_names(new_df, row_number = 1)
+
+moca <- cbind(sample, new_df) # add the fields for data collection onto the specimens to measure. 
+# write.csv(moca, "MoCa_data_acquisition_sheet.csv", row.names = F, append = F) # write it out. 
+
+rm(file, data, new_df, sample)
+```
+
