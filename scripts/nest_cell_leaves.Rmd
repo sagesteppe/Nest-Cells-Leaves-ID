@@ -497,7 +497,7 @@ Nothing is sticking out as out of place. We see that *E. glaucus* leaves are gen
 
 Let's check if the side of the leaf with more leaf teeth generally has shorter spacing between leaf teeth
 
-```{r}
+```{r, echo = F}
 mean <- data[ ,list(mean=mean(teeth)), by = c('taxon', 'id')]
 data <- data[mean, on = c('taxon', 'id')]
 data[teeth == mean, symmetry := "symmetrical"] # dang d.t. is slick
@@ -513,8 +513,6 @@ data[,c('symmetry', 'mean'):=NULL]
 sol_spa <- sol_spa[order(LT_measurement,)]
 eri_gla <- eri_gla[order(LT_measurement,)]
 mor_cal <- mor_cal[order(LT_measurement,)]
-
-# everything down here is fucking damn dumb and i was tired and not sure how the hell i managed to infect the world with so much stupid. 
 
 dotchart(mor_cal$LT_measurement, groups = as.factor(mor_cal$symmetry),  color = 'forestgreen', pch = 19,
                   main = "M.  californica \n Leaf Teeth Distance (mm)")
@@ -576,9 +574,6 @@ text(9.25, 100, "R2 = 0.5987 \n p = < 2.2e-16")
 It's seems they are related. We will continue on doing what was intuitively obvious.
 
 Check for spatial auto-correlation. We hope that each plant is independent of each other. However, plants close to each other in space have a higher porbability of being related, and experiencing the the same habitat *(i.e. both similar Nature and Nurture)*. While spatial-autocorrelation is generally thought of as being related to similar abiotic factors, I extend it as a meager endeavor to search for more genetic structure. 
-```{r}
-
-```
 
 
 ## Trait 1. Leaf Glandularity
