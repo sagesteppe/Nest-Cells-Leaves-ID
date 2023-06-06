@@ -15,6 +15,10 @@ output:
   
 ```{r include=FALSE}
 knitr::opts_chunk$set(comment = NA)
+knitr::opts_chunk$set(echo = F)
+knitr::opts_chunk$set(dpi = 300) 
+knitr::opts_chunk$set(message = F)
+knitr::opts_chunk$set(warning = F)
 ```
 
 
@@ -22,9 +26,9 @@ knitr::opts_chunk$set(comment = NA)
 
 ## Natural History
 
-The study site that these data were collected from is a Siskiyou-Klamath Coastal Sand Dune System in Northern California (Alpert & Kagan 2019). This area is replete with a great number of native bee taxa, and appears to maintain a great number of the native plant taxa - curently with few exotic taxa being present. 
+The study site that these data were collected from is a Siskiyou-Klamath Coastal Sand Dune System in Northern California (Alpert & Kagan 2019). This area is replete with a great number of native bee taxa, and appears to maintain a great number of the native plant taxa - currently with few exotic taxa being present. 
 
-*Megachile wheeleri* is a widespread leafcutter bee in North America, with geographic variation in pollen and nectar feeding preferences, as well as differences in the leaves it uses to build it's nest cells (CITE). In this area *M. wheeleri* has been noted to forage for floral resources largely from *Achillea millefolium*, *Erigeron glaucus*,  and *Solidago spathulata* (Gordon 1992). However, Gordon's fieldwork was conducted in the mid 60's and as of our time of sampling, *A. millefolium* was seldom seen, and I posit is now a seldom used pollen resource (Benkendorf pers. obs). The preference of leaves which *M wheeleri* uses for constructing nest cells aligns loosely with it's floral feeding preferences, with a marked rate of usage of *S. spathulata* leaves, and the additional usage of *Morella* (=*Myrica*) *californica* leaves in certain sites (Gordon 1992, UNDERGRAD THESIS). 
+*Megachile wheeleri* is a widespread leaf-cutter bee in North America, with geographic variation in pollen and nectar feeding preferences, as well as differences in the leaves it uses to build it's nest cells (CITE). In this area *M. wheeleri* has been noted to forage for floral resources largely from *Achillea millefolium*, *Erigeron glaucus*,  and *Solidago spathulata* (Gordon 1992). However, Gordon's fieldwork was conducted in the mid 60's and as of our time of sampling, *A. millefolium* was seldom seen, and I posit is now a seldom used pollen resource (Benkendorf pers. obs). The preference of leaves which *M wheeleri* uses for constructing nest cells aligns loosely with it's floral feeding preferences, with a marked rate of usage of *S. spathulata* leaves, and the additional usage of *Morella* (=*Myrica*) *californica* leaves in certain sites (Gordon 1992, Corey Andrikopolus & M. Mesler). 
 
 The relative abundance of these plant taxa, as well as features of pollen morphology, make this system a promising system for understanding the costs of mutualisms in an oligolectic bee. 
 
@@ -52,7 +56,7 @@ Flowering Jul–Sep. Dunes and headlands; 0–100 m; Calif., Oreg.
 
 ```{r, out.width = "35%", fig.align="center", echo = F, fig.cap="Solidago spathulata, Wheeler No. 109, Samoa Rare Plant Area - Arcata California. Herbarium: BLMAR. Accessed via the California Consortium of Herbaria 09.30.2021"}
 
-knitr::include_graphics(paste0(here::here(),"/images/Solidago_spathulata_wheeler_109.jpg"))
+knitr::include_graphics("../images/Solidago_spathulata_wheeler_109.jpg"))
 ```
 
 ## *Erigeron glaucus* Ker Gawler
@@ -71,7 +75,7 @@ Flowering (Mar–)May–Jul(–Dec). Coastal bluffs, dunes, and beaches; 0–30 
 ---
 
 ```{r, out.width="35%", fig.align="center", echo = F, fig.cap="Erigeron glaucus, Wheeler No. 118, King Range - Humboldt Co. California. Herbarium: BLMAR. Accessed via the California Consortium of Herbaria 09.30.2021"}
-knitr::include_graphics(paste0(here::here(),"/images/Erigeron_glaucus_wheeler_118.jpg"))
+knitr::include_graphics("../images/Erigeron_glaucus_wheeler_118.jpg")
 ```
 
 ## *Morella californica* (Chamisso & Schlechtendal) Wilbur
@@ -96,7 +100,7 @@ It is quite common for two or three pistillate or bisexual flowers to occur per 
 ---
 
 ```{r, out.width="35%", fig.align="center", echo = F, fig.cap="Morella californica, Benkendorf s.n., Coast Dairies - Santa Cruz Co. California. Herbarium: UCSC. Accessed via the California Consortium of Herbaria 10.02.2021"}
-knitr::include_graphics(paste0(here::here(),"/images/Morella_californica_benkendorf_sn.jpg"))
+knitr::include_graphics("../images/Morella_californica_benkendorf_sn.jpg")
 ```
 Please note that in the above specimen it appears that three leaf cuts have been performed and are evident on the branch to the right in the terminal cluster of leaves. Note that this size of cut is what a *M. wheeleri* would use to 'cap' a nest cell. 
 
@@ -105,8 +109,8 @@ Please note that in the above specimen it appears that three leaf cuts have been
 *Megachile wheeleri* is a leafcutter bee and uses plant leafs to serve as a 'nest cell' the young bee then develops a cocoon within this cell to develop overwinter in.
 
 ```{r, out.width = "40%", fig.show='hold', echo = F, fig.cap="Left, A freshly dug M. wheeleri nest cell, constructed in the past couple weeks . Right Contents of two freshly dug M. wheeleri nest cells, constructed a month or so ago. Both images from Lanphere Dunes, Sept.2021, by Amelia Litz"}
-knitr::include_graphics(paste0(here::here(),"/images/Megachile_wheeleri_nest_cell_green.jpeg"))
-knitr::include_graphics(paste0(here::here(),"/images/Megachile_wheeleri_nest_cell_dissection.jpeg"))
+knitr::include_graphics("../images/Megachile_wheeleri_nest_cell_green.jpeg")
+knitr::include_graphics("../images/Megachile_wheeleri_nest_cell_dissection.jpeg")
 ```
 The image at right contains, another nest cell, a late larval stage *M. wheeleri*, and a provision composed of Pollen & Nectar, and another late larval stage *M. wheeleri*.
 
@@ -223,7 +227,7 @@ For the *Morella californica* data scored from herbaria several extra columns ex
 The other assorted columns are explained in the script 'nest_cell_leaves_morella' where we set up and chose which specimens to sample. 
 
 ```{r, out.width="50%", fig.align="center", echo = F, fig.cap="Stylized illustrations indicating collected traits. S. spathulata (R), E. glaucus (L)."}
-knitr::include_graphics(paste0(here::here(),"/images/leaf_traits.jpg"))
+knitr::include_graphics("../images/leaf_traits.jpg")
 ```
 
 ## Predictors we Hope to Eliminate
@@ -249,9 +253,9 @@ library(data.table)
 ```
 
 ```{r, echo = F}
-#here::set_here('..')
-file <- paste0(here::here(), '/data/raw/',
-               list.files(paste0(here::here(), '/data/raw/'), 
+
+file <- paste0('../data/raw/',
+               list.files(paste0('../data/raw/'), 
              pattern = "csv$")
              )
 
@@ -262,7 +266,7 @@ data$imperial_fract <- 1
 
 set.seed(125)
 
-data1 <- read.csv(file[2], stringsAsFactors = F)
+data1 <- read.csv(file, stringsAsFactors = F)
 data1 <- data1[1:65,c(3,9:17,19:20)]
 data1 <- data1[complete.cases(data1[ , 6]),] # this will drop the unsampled rows. 
 data1$group <- seq(82, 135, by = 1)
@@ -270,8 +274,7 @@ data1$group <- seq(82, 135, by = 1)
 rm(file)
 ```
 
-Here we tidy up the herbarium data so the values are confluent with those from the field data. 
-```{r, echo = F}
+```{r tidy up the herbarium data, echo = F}
 data1$mm_conversion <- data1$mm_conversion / 10
 
 i <- c("leaf_length_mm", "leaf_width_mm")
@@ -295,6 +298,7 @@ rm(i, data1)
 
 
 I did not want to burn through too much paper in my notebook so have these data set up in a funny way. The cells which contain a couple measurements are delimited by a semicolon to store attributes from opposite margins of the leaves.
+
 ```{r}
 data$teeth.1 <- gsub(";.+$", "", data$number_teeth)
 data$teeth.2 <- gsub("^.+;", "", data$number_teeth)
@@ -961,6 +965,7 @@ It was a shame I did not have the opportunity to view more *Morella californica*
 2'. Leaf margin with a couple teeth, these oftentimes coming to an evident point and generally pointing forward nearly parallel to the main blade. One side of the leaf covered with dark round glands... **Morella californica**
 
 \newpage
+
 # Citations
 
 Allan J. Bornstein 2012, Morella californica, in Jepson Flora Project (eds.) Jepson eFlora, https://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=80350, accessed on October 02, 2021.
