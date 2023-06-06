@@ -1,5 +1,5 @@
 
-This was a fun project trying to make data driven keys. The leaf measurements for both *Solidago* and *Erigeron* were made in the field, with most *Morella* measurements originating from randomly selected herbaria records. The scripts detail randomly selecting *Morella* specimens, and comparing some of the traits. 
+This was a fun project trying to make data driven keys. The leaf measurements for both *Solidago* and *Erigeron* were made in the field, with most *Morella* measurements originating from randomly selected herbaria records. The scripts detail randomly selecting *Morella* specimens, and comparing some of the traits. Knowledge of which plant species are used derive from M. Mesler and students.  
 
 ## Key Distinguishing *Megachile wheeleri* Nest Cell Materials
 
