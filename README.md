@@ -1,4 +1,6 @@
 
+This was a fun project trying to make data driven keys. The leaf measurements for both *Solidago* and *Erigeron* were made in the field, with most *Morella* measurements originating from randomly selected herbaria records. The scripts detail randomly selecting *Morella* specimens, and comparing some of the traits. 
+
 ## Key Distinguishing *Megachile wheeleri* Nest Cell Materials
 
 1.. Leaf margin essentially entire to few toothed, generally with the few evident teeth separated by > 3.0 mm. If spaces between leaf teeth < 5 mm, than the teeth rarely if ever on angular- to almost blocky (serrate) projections, and essentially always lacking a tiny light gland at the apice. If a leaf apex is present, it is essentially always longer than the pair of leaf teeth adjacent to it. Leaf occasionally with dark glands on one side.... **2**
